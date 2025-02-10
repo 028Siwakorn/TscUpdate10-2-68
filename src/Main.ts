@@ -1,27 +1,23 @@
-import { User } from "./User"
-import { Participant } from "./Participant"
-//import { Activity } from "./Activity"
-import { Registration } from "./Registration"
-import { Certificate } from "./Certificate"
-import { Instructor } from "./Instructor"
-import { Notification } from "./Notification"
-console.log("################# User ##################")
-const user1 = new User("Siwakorn", "123", "First", "student", "664259028@webmail.npru.ac.th")
-console.log(user1.toString())
-console.log("#############################################")
-console.log("################# Participant ##################")
-const participant1 = new Participant("Siwakorn", "123", "First", "student", "664259028@webmail.npru.ac.th")
-console.log(participant1.toString())
-console.log("#############################################")
-console.log("################# Registration ##################")
-//const registration1 = new Registration("1", participant1, activity1, "student")
-//console.log(registration1.toString())
-console.log("#############################################")
-console.log("################# Certificate ##################")
-const certificate1 = new Certificate(1, "กิจกรรม", new Instructor(), "Siwakorn", "")
-console.log(certificate1.toString())
-console.log("#############################################")
-console.log("################# Notification ##################")
-const notification1 = new Notification(1, "ถึงกำหนดการแล้วครับ!", participant1, "Alive")
-console.log(notification1.toString())
-console.log("#############################################")
+import { User } from "./User";
+import { Participant } from "./Participant";
+import { Registration } from "./Registration";
+import { Instructor } from "./Instructor";
+import { Certificate } from "./Certificate";
+import { Notification } from "./Notification";
+let tae013=new User("Ratchanon","deekub","tae","student","664259013@webmail.npru.ac.th")
+console.log(tae013.toString())
+
+let pa1 = new Participant("Phongsakorn", "112", 'Boom', "student", "664259011@webmail.npru.ac.th")
+
+console.log(pa1.toString())
+
+// let reg = new Registration(1, pa1, ac1, 'รออุมัติ')
+// console.log(reg.toString())
+
+let Api = new Certificate(1,"กิจกรรม",new Instructor(),"ลายเซ็น","")
+
+console.log(Api.toString())
+
+let eiei = new Notification(1,"ผมทำได้แล้วครับ เย้", pa1 , "รออนุมัติ")
+
+console.log(eiei.toString())

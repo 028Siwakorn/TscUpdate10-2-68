@@ -8,13 +8,17 @@ class Registration {
         this.activity = activity;
         this.status = status;
     }
-    submitRegistration() {
+    submitRegistration(registrationId, participant, activity, status) {
+        this.registrationId = registrationId;
+        this.participant = participant;
+        this.activity = activity;
+        this.status = status;
     }
     updateStatus(status) {
         this.status = status;
     }
     toString() {
-        return `Registration[registrationId = ${this.registrationId}, participant = ${this.participant}, activity = ${this.activity}, status = ${this.status}]`;
+        return `Registration[registrationId=${this.registrationId}, participant=${this.participant}, activity=${this.activity}, status=${this.status}]`;
     }
 }
 exports.Registration = Registration;
